@@ -1,75 +1,83 @@
-Git Commands Cheat Sheet
+# Git Commands Reference
 
-Initialization
+A list of common Git commands organized by topic.
 
-git init – Initialize a new Git repository
+---
 
-Configuration
+## 1. Initialize Repository  
+`git init`
 
-git config --global user.name "Your Name" – Set Git user name
+## 2. Clone Repository  
+`git clone <repository_url>`
 
-git config --global user.email "your.email@example.com" – Set Git user email
+## 3. Check Status  
+`git status`
 
-Status Check
+## 4. Configure Git  
+`git config --global user.name "Your Name"`  
+`git config --global user.email "your.email@example.com"`
 
-git status – Show the working tree status
+## 5. Add Files to Staging  
+`git add <file>`  
+`git add .`
 
-Adding Files
+## 6. Commit Changes  
+`git commit -m "Your commit message"`
 
-git add <file> – Add file to staging area
+## 7. View Commit History  
+`git log`
 
-git add . – Add all files in the current directory
+## 8. Push Changes  
+`git push origin <branch_name>`
 
-Removing Files from Staging
+## 9. Pull Changes  
+`git pull`
 
-git rm --cached <file> – Remove file from staging area
+## 10. Create New Branch  
+`git branch <branch_name>`
 
-Commit Changes
+## 11. Switch Branch  
+`git checkout <branch_name>`
 
-git commit -m "commit message" – Commit staged changes
+## 12. Create and Switch Branch  
+`git checkout -b <branch_name>`
 
-Viewing Commit History
+## 13. Merge Branches  
+`git merge <branch_name>`
 
-git log – Show commit logs
+## 14. Delete Branch  
+`git branch -d <branch_name>`
 
-Branch Management
+## 15. View Branches  
+`git branch`
 
-git branch – List branches
+## 16. Stash Changes  
+`git stash`
 
-git checkout -b <branch> – Create and switch to new branch
+## 17. Apply Stash  
+`git stash apply`
 
-git checkout <branch> – Switch to specified branch
+## 18. View Remote  
+`git remote -v`
 
-git switch <branch> – Switch branches (alternative to checkout)
+## 19. Add Remote  
+`git remote add origin <repository_url>`
 
-File Restoration
+## 20. Remove Remote  
+`git remote remove origin`
 
-git restore <file> – Restore deleted file
+## 21. Fetch From Remote  
+`git fetch`
 
-Cloning Repositories
+## 22. Revert Commit  
+`git revert <commit_id>`
 
-git clone <repository-url> – Clone repository from remote source
+## 23. Reset to Commit  
+`git reset --hard <commit_id>`
 
-Removing Files
+## 24. View Differences  
+`git diff`
 
-rm <file> – Remove file from working directory
-
-Directory Navigation
-
-cd <directory> – Change directory
-
-Listing Files
-
-ls – List directory contents
-
-ls -l – List with detailed info
-
-ls -a – List all, including hidden files
-
-Miscellaneous
-
-touch <file> – Create new empty file
-
-cat <file> – Display file content
-
-vim <file> – Open file in Vim editor
+## 25. Tagging  
+`git tag <tag_name>`  
+`git tag -a <tag_name> -m "message"`
